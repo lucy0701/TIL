@@ -6,7 +6,8 @@
 
 ## Javascript
 
-- [Debounce & Throttle](Javascript/debounce-throttle.md)
+- [기초 지식](JavaScript/basics.md)
+- [Debounce & Throttle](JavaScript/debounce-throttle.md)
 
 ## ETC
 
