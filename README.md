@@ -4,7 +4,7 @@
 
 - [Attribute](HTML/attribute.md)
 
-## Javascript
+## JavaScript
 
 - [기초 지식](JavaScript/basics.md)
 - [Debounce & Throttle](JavaScript/debounce-throttle.md)
