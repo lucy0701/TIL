@@ -96,8 +96,6 @@
 
 ## Function
 
-[Function - 상세 설명](function.md)
-
 - 재사용을 원하는 기능을 담는 방법
 - `()`를 사용하여 실행
 - arguments : 함수가 작동하는데 필요한 데이터. 하나 이상의 인수는 콤마`,`로 구분
@@ -109,8 +107,6 @@
 ## Event
 
 웹사이트의 상호작용에 필요 함
-
-[Event - 상세 설명](event.md)
 
 ```js
 document.querySelector('html').onclick = function () {
