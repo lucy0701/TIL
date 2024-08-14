@@ -7,6 +7,7 @@
 ## JavaScript
 
 - [기초 지식](JavaScript/basics.md)
+- [async/await](JavaScript/async-await.md)
 - [Debounce & Throttle](JavaScript/debounce-throttle.md)
 
 ## ETC

@@ -7,12 +7,13 @@
 > - [JavaScript란?](#javascript란)
 > - [script 태그 위치](#script-태그-위치)
 > - [동등 연산자와 일치 연산자](#동등-연산자와-일치-연산자)
-> - [함수](#함수)
-> - [이벤트](#이벤트)
-> - [API](#API)
-> - [인터프리터와 컴파일러](#인터프리터와-컴파일러)
-> - [서버 사이드와 클라이언트 코드](#서버-사이드와-클라이언트-코드)
-> - [오류의 종류](#오류의-종류)
+> - [Function](#function)
+> - [Event](#event)
+> - [API](#api)
+> - [Interpreted versus compiled code](#interpreted-versus-compiled-code)
+> - [Server side versus client side code](#server-side-versus-client-side-code)
+> - [Types of error](#types-of-error)
+> - [Variables](#variables)
 
 [TOP](#)
 
@@ -93,7 +94,9 @@
 
 [TOP](#)
 
-## 함수
+## Function
+
+[Function - 상세 설명](function.md)
 
 - 재사용을 원하는 기능을 담는 방법
 - `()`를 사용하여 실행
@@ -103,9 +106,11 @@
 
 [TOP](#)
 
-## 이벤트
+## Event
 
 웹사이트의 상호작용에 필요 함
+
+[Event - 상세 설명](event.md)
 
 ```js
 document.querySelector('html').onclick = function () {
@@ -172,7 +177,7 @@ function createParagraph() {
 
 [TOP](#)
 
-## 인터프리터와 컴파일러
+## Interpreted versus compiled code
 
 ### 인터프리터
 
@@ -196,7 +201,7 @@ function createParagraph() {
 
 [TOP](#)
 
-## 서버 사이드와 클라이언트 코드
+## Server side versus client side code
 
 ### 서버 사이드 코드
 
@@ -211,7 +216,7 @@ function createParagraph() {
 
 [TOP](#)
 
-## 오류의 종류
+## Types of error
 
 - 구문 오류
   - 코드에 오타가 있을 경우 오류
@@ -222,7 +227,7 @@ function createParagraph() {
 
 [TOP](#)
 
-## 변수
+## Variables
 
 - 값을 저장하는 컨테이너
 
@@ -265,16 +270,12 @@ let age;
 - 재선언 가능
 - 함수 스코프 레벨이므로, if, for등 에서 선언해도 외부에서 호출 가능함
 
-[TOP](#)
-
 ### 변수 이름 규칙
 
 - 라틴 문자(0-9, a-z, A-Z)와 언더바(`_`) 문자를 사용
 - 변수 이름의 맨 앞에 언더바(`_`), 숫자 사용 X
 - lower camel case: (ex) `const userAge`
 - JavaScript 예약어 사용 X : (ex) `var`, `function`, `let`, `for`
-
-[TOP](#)
 
 ### 동적 타입
 
