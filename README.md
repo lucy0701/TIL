@@ -9,6 +9,7 @@
 - [기초 지식](JavaScript/basics.md)
 - [Variables](JavaScript/variables.md)
 - [Scope](JavaScript/scope.md)
+- [Closure](JavaScript/closures.md)
 - [Async/Await](JavaScript/async-await.md)
 - [Debounce & Throttle](JavaScript/debounce-throttle.md)
 
