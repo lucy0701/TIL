@@ -13,6 +13,10 @@
 - [Async/Await](JavaScript/async-await.md)
 - [Debounce & Throttle](JavaScript/debounce-throttle.md)
 
+## TypeScript
+
+- [Declaration](TypeScript/declaration.md)
+
 ## ETC
 
 - [Markdown](Etc/Markdown.md)
