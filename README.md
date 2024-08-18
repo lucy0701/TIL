@@ -16,6 +16,7 @@
 ## TypeScript
 
 - [Declaration](TypeScript/declaration.md)
+- [Namespace and Modules](TypeScript/namespace-modules.md)
 
 ## ETC
 
