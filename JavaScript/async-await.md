@@ -12,12 +12,14 @@
 `async` keyword는 함수 앞에 작성
 
 - `async`를 작성하면, 해당 함수는 비동기로 작업 됨을 의미
-- 반드시 Promise를 반환하며, 프로미스가 아닌것은 프로미스로 감싸 반환
+- 항상 Promise를 반환하며, 함수가 명시적으로 Promise를 반환하지 않더라도, JS엔진이 반환값을 `Promise.resolve`로 감싸서 반환 함
 
   ```js
   async function f() {
     return 1;
   }
+
+  // Promise.resolve(1)로 반환 됨
   ```
 
 ### Await
@@ -43,6 +45,7 @@ const value = await promise;
   ```
 
 - 코드가 실행 되고 `await`키워드를 만나면 실행이 잠시 '중단'되었다가 프로미스가 처리되면 실행이 재개 됨
+- `await`은 내부적으로 Promise의 메서드인 `.then`을 호출하여 처리하기 때문에, `await`를 사용하면 `resolve` 나 `reject` 값이 처리되어 반환될 수 있음.
 
 * #### `async`는 최상위 레벨 코드에서 작동하지 않음
 
@@ -84,8 +87,8 @@ const value = await promise;
     f();
     ```
 
-    1.  `await`은 `.then`이 구현되어있으면서 프라미스가 아닌 객체를 받으면, 내장 함수 resolve와 reject를 인수로 제공하는 메서드인 `.then`을 호출 함
-    2.  `await`는 **resolve**와 **reject** 중 하나가 호출되길 기다렸다가((\*)로 표시한 줄) 호출 결과를 가지고 다음 일을 진행
+    - `await`은 Promise가 아닌 값을 자동으로 `Promise.resolve`로 감싸서 처리하여, 내장 함수 resolve와 reject를 인수로 제공하는 메서드인 `.then`을 호출 함
+    - `await`는 **resolve**와 **reject** 중 하나가 호출되길 기다렸다가((\*)로 표시한 줄) 호출 결과를 가지고 다음 일을 진행
 
 [TOP](#)
 
