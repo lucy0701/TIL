@@ -12,6 +12,7 @@
 - [Closure](JavaScript/closures.md)
 - [Async/Await](JavaScript/async-await.md)
 - [Debounce & Throttle](JavaScript/debounce-throttle.md)
+- [Proxy & Reflect](JavaScript/proxy-reflect.md)
 
 ## TypeScript
 
