@@ -26,17 +26,17 @@
 - ex. 자동완성 : 사용자가 입력을 멈춘 후 마지막 입력만 처리
 
 ```js
-function debounce(func, delay) {
+function debounce(fun, delay) {
   let timer;
-  return function (...args) {
+  return function () {
     if (timer) {
       clearTimeout(timer);
     }
-    timer = setTimeout(() => {
-      func.apply(this, args);
-    }, delay);
+    timer = setTimeout(fun, delay);
   };
 }
+
+const inputDebounce = debounce(() => console.log('test'), 3000);
 ```
 
 ### Throttling
@@ -50,17 +50,19 @@ function debounce(func, delay) {
 - ex. 스크롤 이벤트 : 페이지 스크롤 시, 일정 시간 간격으로 스크롤 위치를 기록하거나 화면을 업데이트
 
 ```js
-function throttle(func, delay) {
+function throttle(fun, delay) {
   let lastCall = 0;
 
-  return function (...args) {
+  return function () {
     const now = Date.now();
-    if (now - lastCall < delay) return;
+    if (now - lastCall < delay) return console.log(23);
 
     lastCall = now;
-    return func.apply(this, args);
+    return fun();
   };
 }
+
+const clickThrottle = throttle(() => console.log(123), 30000);
 ```
 
 <br>
