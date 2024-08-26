@@ -19,6 +19,10 @@
 - [Declaration](TypeScript/declaration.md)
 - [Namespace and Modules](TypeScript/namespace-modules.md)
 
+## Next.js
+
+- [SSR-SSG-ISR](Next/SSR-SSG-ISR.md)
+
 ## ETC
 
 - [Markdown](Etc/Markdown.md)
